@@ -1,0 +1,292 @@
+.aboutBody1 {
+	overflow-y: hidden;
+	transition: all 500ms ease-in 0.1s;
+}
+.aboutBody1 img {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+@media (min-width: 1250px) {
+	.NavBtn {
+		position: fixed;
+		z-index: 30;
+		color: white;
+		right: 5vw;
+		top: 4vh;
+	}
+
+	.aboutBody2 {
+		background-image: url('/about.png');
+		background-size: cover;
+		object-fit: cover;
+		overflow-y: hidden;
+		height: 100vh;
+		padding: 75px 50px 0 50px;
+	}
+	.logoBox {
+		position: absolute;
+		top: 20px;
+		left: 50px;
+		height: 16vh;
+		width: 16vw;
+		filter: invert(100%);
+	}
+	.aboutText {
+		width: calc(100vw - 200px);
+		height: 90%;
+		font-family: 'Cormorant';
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	.aboutListBox {
+		list-style: none;
+		width: fit-content;
+		display: flex;
+		flex-direction: column;
+	}
+	.aboutListBox li {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 2vh;
+		font-size: 1.1vw;
+		font-family: KoPubWorldBatang;
+		color: #0b1d38;
+	}
+	.aboutListBox li span {
+		margin: 0.5vh 0%;
+	}
+	.aboutListBox li h1 {
+		font-size: 4vw;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		font-family: 'Cormorant';
+	}
+}
+@media (min-width: 760px) and (max-width: 1249px) {
+	.NavBtn {
+		position: fixed;
+		z-index: 30;
+		color: white;
+		right: 5vw;
+		top: 4vh;
+	}
+
+	.aboutBody2 {
+		background-image: url('/about.png');
+		background-size: cover;
+		object-fit: cover;
+		overflow-y: hidden;
+		height: 100vh;
+		padding: 5vh 2vw 0 2vw;
+	}
+	.aboutBody2::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 0;
+		height: 110%;
+	}
+	.logoBox {
+		position: absolute;
+		top: 40px;
+		left: 50px;
+		width: 200px;
+		height: 100px;
+	}
+	.aboutText {
+		margin-top: 10vh;
+		width: 94vw;
+		height: 100%;
+		font-family: 'Cormorant';
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		z-index: 2;
+	}
+	.aboutListBox {
+		list-style: none;
+		width: fit-content;
+		display: flex;
+		flex-direction: column;
+		z-index: 2;
+	}
+	.aboutListBox li {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 2vh;
+		font-size: 2.5vw;
+		font-family: KoPubWorldBatang;
+		color: white;
+	}
+	.aboutListBox li span {
+		margin: 0.5vh 0%;
+	}
+	.aboutListBox li h1 {
+		font-size: 10vw;
+
+		margin-bottom: 0px;
+		margin-top: 0px;
+		font-family: 'Cormorant';
+	}
+}
+@media (min-width: 321px) and (max-width: 759px) {
+	.NavBtn {
+		position: fixed;
+		z-index: 30;
+		color: white;
+		right: 5vw;
+		top: 4vh;
+	}
+
+	.aboutBody2 {
+		background-image: url('/about.png');
+		background-size: cover;
+		object-fit: cover;
+		overflow-y: hidden;
+		height: 100vh;
+		padding: 5vh 2vw 0 2vw;
+		z-index: 2;
+	}
+	.aboutBody2::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 0;
+		height: 110%;
+	}
+	.logoBox {
+		position: absolute;
+		top: 20px;
+		left: 50px;
+		width: 100px;
+		height: 50px;
+		z-index: 2;
+	}
+	.aboutText {
+		margin-top: 10vh;
+		width: 94vw;
+		height: 100%;
+		font-family: 'Cormorant';
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		z-index: 2;
+	}
+	.aboutListBox {
+		list-style: none;
+		width: fit-content;
+		display: flex;
+		flex-direction: column;
+		z-index: 2;
+		padding-left: 0;
+	}
+	.aboutListBox li {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 2vh;
+		font-size: 3vw;
+		font-family: KoPubWorldBatang;
+		color: white;
+	}
+	.aboutListBox li span {
+		margin: 0.5vh 0%;
+	}
+	.aboutListBox li h1 {
+		font-size: 10vw;
+		font-family: 'Cormorant';
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+}
+
+@media (max-width: 320px) {
+	.NavBtn {
+		position: fixed;
+		z-index: 30;
+		color: white;
+		right: 5vw;
+		top: 4vh;
+	}
+
+	.aboutBody2 {
+		background-image: url('/about.png');
+		background-size: cover;
+		object-fit: cover;
+		overflow-y: hidden;
+		height: 100vh;
+		padding: 5vh 2vw 0 2vw;
+		z-index: 2;
+	}
+	.aboutBody2::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 0;
+		height: 110%;
+	}
+	.logoBox {
+		position: absolute;
+		top: 5vh;
+		left: 50px;
+		height: 6vh;
+		width: 24vw;
+		z-index: 2;
+	}
+	.aboutText {
+		margin-top: 10vh;
+		width: 94vw;
+		height: 100%;
+		font-family: 'Cormorant';
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		z-index: 2;
+	}
+	.aboutListBox {
+		list-style: none;
+		width: fit-content;
+		display: flex;
+		flex-direction: column;
+		z-index: 2;
+		padding-left: 0;
+	}
+	.aboutListBox li {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 2vh;
+		font-size: 1.5vw;
+		font-family: KoPubWorldBatang;
+		color: white;
+	}
+	.aboutListBox li span {
+		margin: 0.5vh 0%;
+	}
+	.aboutListBox li h1 {
+		font-size: 10vw;
+		font-family: 'Cormorant';
+
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+}

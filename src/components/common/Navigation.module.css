@@ -1,0 +1,169 @@
+@media (min-width: 1250px) {
+	.NavContainer {
+		background-color: #f2e7da;
+		color: #0b1d38;
+		font-size: 4vw;
+		width: 101vw;
+		height: 100vh;
+		position: absolute;
+		z-index: 29;
+		left: -95vw;
+		top: -10vh;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		padding-top: 25vh;
+		font-family: 'Cormorant';
+	}
+	.Ulist {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		align-content: space-around;
+		font-weight: bold;
+	}
+	.Ulist li a {
+		text-decoration: none;
+		color: inherit;
+	}
+	.NavBtn {
+		position: fixed;
+
+		z-index: 30;
+		right: 5vw;
+		top: 4vh;
+		width: 6vw;
+		height: 6vw;
+	}
+}
+
+@media (min-width: 760px) and (max-width: 1249px) {
+	.NavContainer {
+		background-color: #f2e7da;
+		color: #0b1d38;
+		font-size: 10vw;
+		width: 101vw;
+		height: 100vh;
+		position: absolute;
+		z-index: 29;
+		left: -95vw;
+		top: -10vh;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		padding-top: 35vh;
+		font-family: 'Cormorant';
+	}
+	.Ulist {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		align-content: space-around;
+		font-weight: bold;
+	}
+	.Ulist li a {
+		text-decoration: none;
+		color: inherit;
+	}
+	.NavBtn {
+		position: fixed;
+
+		z-index: 30;
+		right: 6vw;
+		top: 4vh;
+		width: 6vw;
+		height: 6vw;
+	}
+}
+
+@media (min-width: 321px) and (max-width: 759px) {
+	.NavContainer {
+		background-color: #f2e7da;
+		color: #0b1d38;
+		font-size: 12vw;
+		width: 101vw;
+		height: 100vh;
+		position: absolute;
+		z-index: 29;
+		left: -95vw;
+		top: -10vh;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		padding-top: 30vh;
+		font-family: 'Cormorant';
+		font-weight: bold;
+	}
+	.Ulist {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		align-content: space-evenly;
+		height: fit-content;
+		padding-left: 0;
+	}
+	.Ulist li {
+		margin-top: 3vh;
+	}
+	.Ulist li a {
+		text-decoration: none;
+		color: inherit;
+	}
+	.NavBtn {
+		position: fixed;
+
+		z-index: 30;
+		right: 5vw;
+		top: 2vh;
+		width: 10vw;
+		height: 6vw;
+	}
+}
+
+@media (max-width: 320px) {
+	.NavContainer {
+		background-color: #f2e7da;
+		color: #0b1d38;
+		font-size: 12vw;
+		width: 101vw;
+		height: 100vh;
+		position: absolute;
+		z-index: 29;
+		left: -99vw;
+		top: -10vh;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		padding-top: 30vh;
+		font-family: 'Cormorant';
+		font-weight: bold;
+	}
+	.Ulist {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		align-content: space-evenly;
+		height: fit-content;
+		padding-left: 0;
+	}
+	.Ulist li {
+		margin-top: 3vh;
+	}
+	.Ulist li a {
+		text-decoration: none;
+		color: inherit;
+	}
+	.NavBtn {
+		position: fixed;
+
+		z-index: 30;
+		right: 5vw;
+		top: 2vh;
+		width: 10vw;
+		height: 6vw;
+	}
+}

@@ -1,0 +1,1404 @@
+/* 
+PC화면은 vw (비율값)을 줘서 작성(px단위 사용안함) , 모바일 화면은 px단위로 고정시킴(고정단위를 사용 ) v
+ */
+.PhotoBox img {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+@media (min-width: 1250px) {
+	/* 전체 컨텐츠 컨테이너 */
+	.PhotoBox {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		translate: 3d (0, 0, 0);
+		transition: all 700ms (0.09, 0.03, 0.19, 0.72) 0s;
+		/* 모든 트랜지션 효과 발생시 해당 결과 적용됨.*/
+		text-transform: uppercase;
+		font-family: 'Cormorant';
+	}
+
+	.PhotoBox article {
+		position: relative;
+		height: 100vh;
+		width: 95vw;
+		padding: 0 2.5vw 0 2.5vw;
+		margin-top: 0.01vh;
+		/* 개별 컨텐츠 컨테이너의 공통 설정*/
+	}
+
+	/* 첫번째 컨테이너 내부 */
+
+	.Section0 {
+		/* 첫번째 컨테이너 전체 상자 설정 */
+		text-align: center;
+		background-color: #0b1d38;
+	}
+	.section0Box {
+		margin-top: 28vh;
+	}
+	.logoImgContainer {
+		position: relative;
+		width: 48vw;
+		height: 43vh;
+		margin: 0% 21vw 4.5vh 27vw;
+	}
+	.logoText {
+		font-weight: 400;
+		font-size: 1.5vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: #ebddcc;
+		margin-top: 13vh;
+	}
+	/* 첫번째 컨테이너 내부 */
+
+	/* 두번째 컨테이너 내부 */
+	.Section1 {
+		/* 첫번째 컨테이너 전체 상자 설정 */
+		width: 100vw !important;
+		text-align: center;
+		background-color: #0b1d38;
+		padding: 0% !important;
+	}
+	.section01Box {
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		flex-direction: row;
+	}
+	.section01Box div a {
+		position: relative;
+		display: block;
+		width: 50vw;
+		height: 100vh;
+		overflow: hidden;
+		text-decoration: none;
+	}
+	.section01ImgContainer {
+		position: relative;
+		width: 50vw;
+		height: 100vh;
+		background-image: url(./../../public/section01/section1_img01.png);
+		background-size: 11em 100vh;
+
+		padding: 40vh 0%;
+		font-size: 5vw;
+		color: white;
+		transition: scale(1);
+		transition: all 450ms ease-in-out 0s;
+	}
+
+	.section02ImgContainer {
+		position: relative;
+		width: 50vw;
+		height: 100vh;
+		background-image: url(./../../public/section01/section1_img02.png);
+		background-size: 11em 100vh;
+		padding: 40vh 0%;
+		font-size: 5vw;
+		color: white;
+		transition: all 450ms ease-in-out 0s;
+	}
+	/* 두번째 컨테이너 내부 */
+
+	/* 세번째 컨테이너 내부 */
+	.Section2 {
+		background-color: #f2e7da;
+
+		color: #0b1d38;
+	}
+	.section02Box {
+		text-align: center;
+		width: 100%;
+		margin-top: 12vh;
+	}
+	.section02Title {
+		margin: 0% auto;
+		font-size: 10vw;
+	}
+	.section02Div {
+		position: relative;
+		font-weight: 600;
+		display: flex;
+		flex-direction: column;
+		align-content: stretch;
+		font-size: 3vw;
+		margin-bottom: 7vh;
+	}
+	.Section2Kr {
+		position: relative;
+		font-family: KoPubWorldBatang;
+		font-size: 2.5vw;
+		height: 20vh;
+	}
+	.section2ImgContainer {
+		position: relative;
+		width: 14vw;
+		height: 13vh;
+		margin: 6vh auto 0vh auto;
+		-webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+		filter: invert(100%);
+	}
+	/* 세번째 컨테이너 내부 */
+
+	.PhotoBox article:nth-child(4) {
+		position: relative;
+		height: 100vh;
+		/* padding 값 -20px을 뺀 height 100vh */
+		width: 100vw;
+		padding: 0 50px 20px 50px;
+		box-sizing: border-box;
+		background-color: #0b1d38;
+		/* 개별 컨텐츠 4번째 컨테이너 설정*/
+	}
+	.PhotoBox article:nth-child(5) {
+		position: relative;
+		height: 30vh;
+		/* padding 값 -20px을 뺀 height 100vh */
+		width: 100vw;
+		padding: 0% 50px;
+		box-sizing: border-box;
+		background-color: #0b1d38;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: center;
+		/* 개별 컨텐츠 4번째 컨테이너 설정*/
+	}
+	/* 전체 컨텐츠 컨테이너 */
+
+	/* nav 버튼 */
+	.NavBtn {
+		position: fixed;
+		z-index: 30;
+		right: 5vw;
+		top: 4vh;
+	}
+
+	/* nav 버튼 */
+
+	/* swiper 내부 */
+	.swiper {
+		width: 100%;
+		height: 100%;
+	}
+	/* 스와이퍼 섹션 컨테이너  */
+	.ImageContainer {
+		background-color: #0b1d38;
+		color: white;
+		height: 100vh;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+	}
+	/* 스와이퍼 섹션 컨테이너  */
+
+	/* 스와이퍼 섹션 컨테이너 타이틀  */
+
+	.slideTitleBox {
+		display: block;
+		width: 100%;
+		height: 17vh;
+		text-align: center;
+		font-weight: 400;
+		margin-bottom: 16vh;
+	}
+
+	.slideSpan {
+		display: block;
+		width: 100%;
+		height: 10.65vh;
+		font-size: 90px;
+		color: #ebddcc;
+		margin-top: 10.7vh;
+		font-weight: bold;
+	}
+	/* 스와이퍼 섹션 컨테이너 타이틀  */
+
+	.slideSection {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+	.slideSection:hover {
+		cursor: pointer;
+	}
+	/* 스와이퍼 본체 설정  */
+
+	.SlidBody {
+		width: 90.07vw;
+		height: 60.07vh;
+	}
+	/* 스와이퍼 본체 설정  */
+
+	/* 스와이퍼 내부 컨텐츠 박스  */
+
+	.swiperContents {
+		width: 80vw;
+		height: 50.07vh;
+	}
+	.swiper-slide {
+		width: 80vw;
+		height: 50.07vh;
+	}
+	/* 스와이퍼 내부 컨텐츠 박스  */
+	/* 스와이퍼 내부 이미지 설정  */
+
+	.myimg {
+		position: relative;
+		overflow: hidden;
+		width: 80vw;
+		height: 50.07vh;
+		border-radius: 20px;
+		margin: 0% auto;
+	}
+
+	.myimg img {
+		position: relative;
+		width: 80vw;
+		height: 50.07vh;
+	}
+	/* 스와이퍼 내부 이미지 설정  */
+
+	/* swiper 내부 */
+	.ImageContainerLogo {
+		display: none;
+	}
+	/* 스와이퍼 하단 로고  */
+	.footerImg {
+		position: relative;
+		width: 20vw;
+		height: fit-content;
+		height: 15vh;
+		margin-left: 5vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.Emails :nth-child(2) {
+		text-transform: none;
+	}
+	.footerInfoBox {
+		display: flex;
+		flex-direction: column;
+		align-content: space-between;
+		width: 100%;
+		padding-left: 3vw;
+		color: #f2e7da;
+	}
+	.footerInfo {
+		width: 70%;
+		font-size: 1.2vw;
+		font-weight: 200;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.footerSpanFirst::after {
+		content: '|';
+		margin: 0% 0.7vw;
+	}
+	.footerSpanSecond::after {
+		margin-left: 3vw;
+	}
+	.copylight {
+		margin: 3vh 0%;
+		color: #f2e7da;
+		font-size: 1.2vw;
+		text-transform: none;
+		font-weight: 200;
+	}
+	.footerWarn {
+		display: flex;
+		flex-wrap: wrap;
+		width: 90%;
+		color: #f2e7da;
+		font-size: 0.7vw;
+		font-weight: 400;
+		font-family: KoPubWorldBatang;
+	}
+	.koreanFooter {
+		font-family: KoPubWorldBatang;
+	}
+}
+@media (min-width: 760px) and (max-width: 1249px) {
+	/* 전체 컨텐츠 컨테이너 */
+
+	.PhotoBox {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		translate: 3d (0, 0, 0);
+		transition: all 700ms (0.09, 0.03, 0.19, 0.72) 0s;
+		/* 모든 트랜지션 효과 발생시 해당 결과 적용됨.*/
+		text-transform: uppercase;
+		font-family: 'Cormorant';
+	}
+
+	.PhotoBox article {
+		position: relative;
+		height: 100vh;
+		width: 100vw;
+		/* 개별 컨텐츠 컨테이너의 공통 설정*/
+	}
+
+	/* 첫번째 컨테이너 내부 */
+
+	.Section0 {
+		/* 첫번째 컨테이너 전체 상자 설정 */
+		text-align: center;
+		background-color: #0b1d38;
+	}
+	.section0Box {
+		margin-top: 28vh;
+	}
+	.logoImgContainer {
+		position: relative;
+		width: 60vw;
+		height: 25vh;
+		margin: 0% auto 0% auto;
+	}
+	.logoText {
+		font-weight: 400;
+		font-size: 3vw;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		color: #ebddcc;
+		margin: 25vh 5vw 0 5vw;
+	}
+	/* 첫번째 컨테이너 내부 */
+
+	/* 두번째 컨테이너 내부 */
+	.Section1 {
+		/* 첫번째 컨테이너 전체 상자 설정 */
+		width: 100vw !important;
+		text-align: center;
+		background-color: #0b1d38;
+		padding: 0% !important;
+	}
+	.section01Box {
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		flex-direction: row;
+	}
+	.section01Box div a {
+		position: relative;
+		display: block;
+		width: 50vw;
+		height: 100vh;
+		overflow: hidden;
+		text-decoration: none;
+	}
+	.section01ImgContainer {
+		position: relative;
+		width: 50vw;
+		height: 100vh;
+		background-image: url(./../../public/section01/section1_img01.png);
+		background-size: 70vw 100vh;
+
+		padding: 40vh 0%;
+		font-size: 5vw;
+		color: white;
+		transition: scale(1);
+	}
+
+	.section02ImgContainer {
+		position: relative;
+		width: 50vw;
+		height: 100vh;
+		background-image: url(./../../public/section01/section1_img02.png);
+		background-size: 70vw 100vh;
+		padding: 40vh 0%;
+		font-size: 5vw;
+		color: white;
+		transition: scale(1);
+	}
+	/* 두번째 컨테이너 내부 */
+
+	/* 세번째 컨테이너 내부 */
+	.Section2 {
+		background-color: #f2e7da;
+
+		color: #0b1d38;
+	}
+	.section02Box {
+		text-align: center;
+		width: 100%;
+		margin-top: 25vh;
+	}
+	.section02Title {
+		margin: 0% auto;
+		font-size: 11vw;
+		font-weight: 700;
+	}
+	.section02Div {
+		position: relative;
+		font-weight: 600;
+		display: flex;
+		flex-direction: column;
+		align-content: stretch;
+		font-size: 4.5vw;
+		margin-bottom: 7vh;
+	}
+	.Section2Kr {
+		position: relative;
+		font-family: KoPubWorldBatang;
+		font-size: 4vw;
+		height: 20vh;
+	}
+	.section2ImgContainer {
+		position: relative;
+		width: 30vw;
+		height: 12vh;
+		margin: 22vh auto 0vh auto;
+		-webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+		filter: invert(100%);
+	}
+	/* 세번째 컨테이너 내부 */
+
+	.PhotoBox article:nth-child(4) {
+		position: relative;
+		height: 100vh;
+		/* padding 값 -20px을 뺀 height 100vh */
+		width: 100%;
+		padding: 0 1vw 20px 1vw;
+		box-sizing: border-box;
+		/* background: linear-gradient(#0b1d38, #0f2b51, #1d4176); */
+		background-color: #0b1d38;
+		/* 개별 컨텐츠 4번째 컨테이너 설정*/
+	}
+	.Emails :nth-child(2) {
+		text-transform: none;
+	}
+	.PhotoBox article:nth-child(5) {
+		position: relative;
+		height: 30vh;
+		/* padding 값 -20px을 뺀 height 100vh */
+		width: 100vw;
+		padding: 0% 3vw;
+		box-sizing: border-box;
+		background-color: #0b1d38;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: center;
+		/* 개별 컨텐츠 4번째 컨테이너 설정*/
+	}
+	/* 전체 컨텐츠 컨테이너 */
+
+	/* nav 버튼 */
+	.NavBtn {
+		position: fixed;
+		z-index: 30;
+		right: 5vw;
+		top: 4vh;
+	}
+
+	/* nav 버튼 */
+
+	/* swiper 내부 */
+
+	.ImageContainer {
+		background-color: #0b1d38;
+		color: white;
+		height: 100vh;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+	}
+	.slideTitleBox {
+		display: block;
+		width: 100%;
+		text-align: center;
+		font-weight: 400;
+		margin-bottom: 14vh;
+		overflow: hidden;
+	}
+	.slideSpan {
+		display: block;
+		width: 100%;
+		height: 10.65vh;
+		font-size: 90px;
+		color: #ebddcc;
+		margin-top: 10.7vh;
+		font-weight: bold;
+	}
+	.slideSection {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		overflow: visible;
+	}
+
+	.SlidBody {
+		width: 90vw;
+		height: 70.07vh;
+		overflow: visible;
+	}
+	.swiperContents {
+		width: 80vw;
+		height: 50.07vh;
+	}
+	.swiper-slide {
+		width: 80vw;
+		height: 50.07vh;
+	}
+	.myimg {
+		position: relative;
+		overflow: hidden;
+		width: 80vw;
+		height: 50.07vh;
+		border-radius: 20px;
+		margin: 0% auto;
+	}
+
+	.myimg img {
+		position: relative;
+		width: 80vw;
+		height: 50.07vh;
+	}
+	.ImageContainerLogo {
+		display: none;
+	}
+	/* swiper 내부 */
+	.footerImg {
+		position: relative;
+		width: 38vw;
+		height: fit-content;
+		height: 9vh;
+		margin-left: 5vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.footerInfoBox {
+		display: flex;
+		flex-direction: column;
+		align-content: space-between;
+		width: 100%;
+		padding-left: 3vw;
+		color: #f2e7da;
+	}
+	.footerInfo {
+		width: 100%;
+		font-size: 2vw;
+		font-weight: 200;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.footerInfo span {
+		margin-top: 1vh;
+	}
+	.footerSpanFirst::after {
+		content: '|';
+		margin: 0% 2vw;
+	}
+	.footerSpanSecond::after {
+		margin-left: 3vw;
+	}
+	.copylight {
+		margin: 1vh 0%;
+		color: #f2e7da;
+		font-size: 2vw;
+		text-transform: none;
+		font-weight: 200;
+	}
+	.footerWarn {
+		display: flex;
+		flex-direction: column;
+		color: #f2e7da;
+		font-size: 2vw;
+		font-weight: 400;
+		font-family: KoPubWorldBatang;
+	}
+	.footerWarnT {
+		display: flex;
+		flex-direction: row;
+		color: #f2e7da;
+		font-size: 1.7vw;
+		font-weight: 400;
+		font-family: KoPubWorldBatang;
+	}
+	.koreanFooter {
+		font-family: KoPubWorldBatang;
+	}
+}
+
+@media (min-width: 321px) and (max-width: 759px) {
+	/* 전체 컨텐츠 컨테이너 */
+	.PhotoBox {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		translate: 3d (0, 0, 0);
+		transition: all 700ms (0.09, 0.03, 0.19, 0.72) 0s;
+		text-transform: uppercase;
+		font-family: 'Cormorant';
+		background-color: #0b1d38;
+		width: 100vw;
+	}
+
+	.PhotoBox article {
+		position: relative;
+		height: 100vh;
+		width: 100vw;
+		/* 개별 컨텐츠 컨테이너의 공통 설정*/
+	}
+
+	/* 첫번째 컨테이너 내부 */
+
+	.Section0 {
+		/* 첫번째 컨테이너 전체 상자 설정 */
+		text-align: center;
+		background-color: #0b1d38;
+	}
+	.section0Box {
+		display: flex;
+		flex-direction: column;
+		align-content: space-between;
+	}
+	.logoImgContainer {
+		position: relative;
+		width: 287.5px;
+		height: 137.5px;
+		margin: 35vh auto;
+	}
+	.logoText {
+		position: absolute;
+		font-weight: 400;
+		font-size: 14px;
+		margin: 0% 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: #ebddcc;
+		bottom: 15vh;
+	}
+	/* 첫번째 컨테이너 내부 */
+	.Emails :nth-child(2) {
+		text-transform: none;
+	}
+	/* 두번째 컨테이너 내부 */
+	.Section1 {
+		/* 첫번째 컨테이너 전체 상자 설정 */
+		width: 100vw !important;
+		text-align: center;
+		background-color: #0b1d38;
+		padding: 0% !important;
+	}
+	.section01Box {
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+	.section01Box div a {
+		position: relative;
+		display: block;
+		width: 100vw;
+		height: 50vh;
+		overflow: hidden;
+		text-decoration: none;
+	}
+	.section01ImgContainer {
+		position: relative;
+		width: 100vw;
+		height: 50vh;
+		background-image: url(./../../public/section01/section1_img01.png);
+		background-size: 100vw 50vh;
+		overflow-x: visible;
+		padding: 20vh 0%;
+		font-size: 35px;
+		color: white;
+		transition: scale(1);
+		transition: all 200ms ease-in 0.2s;
+	}
+
+	.section02ImgContainer {
+		position: relative;
+		width: 100vw;
+		height: 50vh;
+		background-image: url(./../../public/section01/section1_img02.png);
+		background-size: 100vw 50vh;
+		padding: 20vh 0%;
+		font-size: 35px;
+		color: white;
+		transition: all 200ms ease-in 0.2s;
+	}
+	/* 두번째 컨테이너 내부 */
+
+	/* 세번째 컨테이너 내부 */
+	.Section2 {
+		background-color: #f2e7da;
+		color: #0b1d38;
+		width: 100vw;
+	}
+	.section02Box {
+		text-align: center;
+		width: 100vw;
+		margin-top: 12vh;
+	}
+	.section02TextBox {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.section02Title {
+		margin: 0% auto;
+		font-size: 12vw;
+	}
+	.section02Div {
+		position: relative;
+		font-weight: 600;
+		display: flex;
+		flex-direction: column;
+		align-content: stretch;
+		font-size: 8vw;
+		margin: 6vh 5vw 0 5vw;
+		text-transform: none;
+	}
+	.Section2Kr {
+		position: relative;
+		font-family: KoPubWorldBatang;
+		font-size: 4vw;
+		height: 8vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.section2ImgContainer {
+		position: relative;
+		width: 40vw;
+		margin: 7vh auto 0vh auto;
+		padding-bottom: 20%;
+		-webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+		filter: invert(100%);
+	}
+	/* 세번째 컨테이너 내부 */
+
+	.PhotoBox article:nth-child(4) {
+		position: relative;
+		height: 60vh;
+		/* padding 값 -20px을 뺀 height 100vh */
+		width: 100vw;
+		box-sizing: border-box;
+		background-color: #0b1d38;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+		/* 개별 컨텐츠 4번째 컨테이너 설정*/
+	}
+	/* 전체 컨텐츠 컨테이너 */
+	/* 푸터가 24~22%정도 스와이퍼 컨테이너가 76 78정도 차지하도록.  */
+
+	.PhotoBox article:nth-child(5) {
+		position: relative;
+		height: 40vh;
+		/* padding 값 -20px을 뺀 height 100vh */
+		width: 100vw;
+		padding: 0% 2vw;
+		box-sizing: border-box;
+		background-color: #0b1d38;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+		/* 개별 컨텐츠 4번째 컨테이너 설정*/
+	}
+	/* nav 버튼 */
+	.NavBtn {
+		position: fixed;
+		z-index: 30;
+		color: white;
+		right: 5vw;
+		top: 4vh;
+	}
+
+	/* nav 버튼 */
+
+	/* swiper 내부 */
+	.swiper {
+		width: 100%;
+		height: 75vh;
+	}
+	/* 스와이퍼 섹션 컨테이너  */
+	.ImageContainer {
+		background-color: #0b1d38;
+		color: white;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		flex-direction: column;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+	}
+	/* 스와이퍼 섹션 컨테이너  */
+
+	/* 스와이퍼 섹션 컨테이너 타이틀  */
+
+	.slideTitleBox {
+		position: relative;
+		width: 100%;
+		height: 24vh;
+		text-align: center;
+		font-weight: 400;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.slideSpan {
+		position: relative;
+		width: 100%;
+		height: 10.65vh;
+		font-size: 10vw;
+		color: #ebddcc;
+		margin-top: 10.7vh;
+		font-weight: bold;
+	}
+	/* 스와이퍼 섹션 컨테이너 타이틀  */
+
+	.slideSection {
+		position: relative;
+		height: 60vh;
+		display: flex;
+		flex-direction: column;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+	}
+	.slideSection:hover {
+		cursor: pointer;
+	}
+	/* 스와이퍼 본체 설정  */
+
+	.SlidBody {
+		position: relative;
+
+		width: 70vw;
+		height: 30.07vh;
+		border-radius: 20px;
+	}
+	/* 스와이퍼 본체 설정  */
+
+	/* 스와이퍼 내부 컨텐츠 박스  */
+
+	.swiperContents {
+		position: relative;
+
+		width: 70vw;
+		height: 30.07vh;
+	}
+	.swiper-slide {
+		position: relative;
+
+		width: 70vw;
+		height: 30.07vh;
+	}
+	/* 스와이퍼 내부 컨텐츠 박스  */
+	/* 스와이퍼 내부 이미지 설정  */
+
+	.myimg {
+		position: relative;
+		overflow: hidden;
+		width: 70vw;
+		height: 30.07vh;
+		margin: 0% auto;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+	}
+
+	.myimg img {
+		position: relative;
+		width: 70vw;
+		height: 30.07vh;
+	}
+	/* 스와이퍼 내부 이미지 설정  */
+
+	/* swiper 내부 */
+
+	.footerImg {
+		position: relative;
+		width: 250px;
+		height: fit-content;
+		height: 125px;
+		margin-left: 5vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer {
+		display: flex;
+		flex-direction: column;
+		align-content: space-between;
+	}
+	.footerInfoBox {
+		display: flex;
+		flex-direction: column;
+		align-content: space-between;
+		width: 100%;
+		padding-left: 3vw;
+		color: #f2e7da;
+		align-items: center;
+	}
+	.footerInfo {
+		width: fit-content;
+		font-size: 3vw;
+		font-weight: 200;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.footerInfo span {
+		margin-top: 1vh;
+	}
+	.footerSpanFirst::after {
+		content: '|';
+		margin: 0% 2vw;
+	}
+	.footerSpanSecond::after {
+		margin-left: 3vw;
+	}
+	.copylight {
+		margin: 1vh 0%;
+		color: #f2e7da;
+		font-size: 3vw;
+		text-transform: none;
+		font-weight: 200;
+	}
+	.footerWarn {
+		display: flex;
+		flex-direction: column;
+		color: #f2e7da;
+		font-size: 3vw;
+		font-weight: 400;
+		font-family: KoPubWorldBatang;
+	}
+	.footerWarnT {
+		display: flex;
+		flex-direction: column;
+		color: #f2e7da;
+		font-size: 3vw;
+		font-weight: 400;
+		width: 20vw;
+		font-family: KoPubWorldBatang;
+	}
+	.warnBox {
+		display: flex;
+		flex-direction: column-reverse;
+		align-content: space-between;
+		align-items: center;
+	}
+	.warnBox div {
+		width: fit-content;
+		margin-top: 1vh;
+	}
+	.koreanFooter {
+		font-family: KoPubWorldBatang;
+	}
+}
+
+@media (max-width: 320px) {
+	/* 전체 컨텐츠 컨테이너 */
+	.PhotoBox {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		translate: 3d (0, 0, 0);
+		transition: all 700ms (0.09, 0.03, 0.19, 0.72) 0s;
+		text-transform: uppercase;
+		font-family: 'Cormorant';
+		background-color: #0b1d38;
+		width: 100vw;
+	}
+
+	.PhotoBox article {
+		position: relative;
+		height: 100vh;
+		width: 100vw;
+		/* 개별 컨텐츠 컨테이너의 공통 설정*/
+	}
+
+	/* 첫번째 컨테이너 내부 */
+
+	.Section0 {
+		/* 첫번째 컨테이너 전체 상자 설정 */
+		text-align: center;
+		background-color: #0b1d38;
+	}
+	.section0Box {
+		display: flex;
+		flex-direction: column;
+		align-content: space-between;
+	}
+	.logoImgContainer {
+		position: relative;
+		width: 287.5px;
+		height: 137.5px;
+		margin: 35vh auto;
+	}
+	.logoText {
+		position: absolute;
+		font-weight: 400;
+		font-size: 14px;
+		margin: 0% 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: #ebddcc;
+		bottom: 15vh;
+	}
+	/* 첫번째 컨테이너 내부 */
+
+	/* 두번째 컨테이너 내부 */
+	.Section1 {
+		/* 첫번째 컨테이너 전체 상자 설정 */
+		width: 100vw !important;
+		text-align: center;
+		background-color: #0b1d38;
+		padding: 0% !important;
+	}
+	.section01Box {
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+	.section01Box div a {
+		position: relative;
+		display: block;
+		width: 100vw;
+		height: 50vh;
+		overflow: hidden;
+		text-decoration: none;
+	}
+	.section01ImgContainer {
+		position: relative;
+		width: 100vw;
+		height: 50vh;
+		background-image: url(./../../public/section01/section1_img01.png);
+		background-size: 100vw 50vh;
+		overflow-x: visible;
+		padding: 20vh 0%;
+		font-size: 35px;
+		color: white;
+		transition: scale(1);
+		transition: all 200ms ease-in 0.2s;
+	}
+
+	.section02ImgContainer {
+		position: relative;
+		width: 100vw;
+		height: 50vh;
+		background-image: url(./../../public/section01/section1_img02.png);
+		background-size: 100vw 50vh;
+		padding: 20vh 0%;
+		font-size: 35px;
+		color: white;
+		transition: all 200ms ease-in 0.2s;
+	}
+	/* 두번째 컨테이너 내부 */
+
+	/* 세번째 컨테이너 내부 */
+	.Section2 {
+		background-color: #f2e7da;
+		color: #0b1d38;
+		width: 100vw;
+	}
+	.section02Box {
+		text-align: center;
+		width: 100vw;
+		margin-top: 12vh;
+	}
+	.section02TextBox {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.section02Title {
+		margin: 0% auto;
+		font-size: 16vw;
+	}
+	.section02Div {
+		position: relative;
+		font-weight: 600;
+		display: flex;
+		flex-direction: column;
+		align-content: stretch;
+		font-size: 8vw;
+		margin: 6vh 5vw 0 5vw;
+		text-transform: none;
+	}
+	.Section2Kr {
+		position: relative;
+		font-family: KoPubWorldBatang;
+		font-size: 4vw;
+		height: 8vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.section2ImgContainer {
+		position: relative;
+		width: 40vw;
+		margin: 7vh auto 0vh auto;
+		padding-bottom: 20%;
+		-webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+		filter: invert(100%);
+	}
+	/* 세번째 컨테이너 내부 */
+
+	.PhotoBox article:nth-child(4) {
+		position: relative;
+		height: 65vh;
+		/* padding 값 -20px을 뺀 height 100vh */
+		width: 100vw;
+		box-sizing: border-box;
+		background-color: #0b1d38;
+		/* 개별 컨텐츠 4번째 컨테이너 설정*/
+	}
+	/* 전체 컨텐츠 컨테이너 */
+	/* 푸터가 24~22%정도 스와이퍼 컨테이너가 76 78정도 차지하도록.  */
+
+	.PhotoBox article:nth-child(5) {
+		position: relative;
+		height: 40vh;
+		/* padding 값 -20px을 뺀 height 100vh */
+		width: 100vw;
+		padding: 0% 3vw;
+		box-sizing: border-box;
+		background-color: #0b1d38;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+
+		/* 개별 컨텐츠 4번째 컨테이너 설정*/
+	}
+	/* nav 버튼 */
+	.NavBtn {
+		position: fixed;
+		z-index: 30;
+		color: white;
+		right: 5vw;
+		top: 4vh;
+	}
+
+	/* nav 버튼 */
+	.Emails :nth-child(2) {
+		text-transform: none;
+	}
+	/* swiper 내부 */
+	.swiper {
+		width: 100%;
+		height: 75vh;
+	}
+	/* 스와이퍼 섹션 컨테이너  */
+	.ImageContainer {
+		background-color: #0b1d38;
+		color: white;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+	}
+	/* 스와이퍼 섹션 컨테이너  */
+
+	/* 스와이퍼 섹션 컨테이너 타이틀  */
+
+	.slideTitleBox {
+		position: relative;
+		width: 100%;
+		height: 24vh;
+		text-align: center;
+		font-weight: 400;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.slideSpan {
+		position: relative;
+		width: 100%;
+		height: 10.65vh;
+		font-size: 10vw;
+		color: #ebddcc;
+		margin-top: 10.7vh;
+		font-weight: bold;
+	}
+	/* 스와이퍼 섹션 컨테이너 타이틀  */
+
+	.slideSection {
+		position: relative;
+
+		height: 75vh;
+		display: flex;
+		flex-direction: column;
+	}
+	.slideSection:hover {
+		cursor: pointer;
+	}
+	/* 스와이퍼 본체 설정  */
+
+	.SlidBody {
+		position: relative;
+
+		width: 70vw;
+		height: 30.07vh;
+		border-radius: 20px;
+	}
+	/* 스와이퍼 본체 설정  */
+
+	/* 스와이퍼 내부 컨텐츠 박스  */
+
+	.swiperContents {
+		position: relative;
+
+		width: 70vw;
+		height: 30.07vh;
+	}
+	.swiper-slide {
+		position: relative;
+
+		width: 70vw;
+		height: 30.07vh;
+	}
+	/* 스와이퍼 내부 컨텐츠 박스  */
+	/* 스와이퍼 내부 이미지 설정  */
+
+	.myimg {
+		position: relative;
+		overflow: hidden;
+		width: 70vw;
+		height: 30.07vh;
+		margin: 0% auto;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+	}
+
+	.myimg img {
+		position: relative;
+		width: 70vw;
+		height: 30.07vh;
+	}
+	/* 스와이퍼 내부 이미지 설정  */
+
+	/* swiper 내부 */
+
+	.footerImg {
+		position: relative;
+		width: 240px;
+		height: fit-content;
+		height: 120px;
+		margin-left: 5vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer {
+		display: flex;
+		flex-direction: column;
+		align-content: space-between;
+	}
+	.footerInfoBox {
+		display: flex;
+		flex-direction: column;
+		align-content: space-between;
+		width: 100%;
+		padding-left: 3vw;
+		color: #f2e7da;
+		align-items: center;
+	}
+	.footerInfo {
+		width: fit-content;
+		font-size: 2vw;
+		font-weight: 200;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.footerInfo span {
+		margin-top: 1vh;
+	}
+	.footerSpanFirst::after {
+		content: '|';
+		margin: 0% 2vw;
+	}
+	.footerSpanSecond::after {
+		margin-left: 3vw;
+	}
+	.copylight {
+		margin: 1vh 0%;
+		color: #f2e7da;
+		font-size: 2vw;
+		text-transform: none;
+		font-weight: 200;
+	}
+	.footerWarn {
+		display: flex;
+		flex-direction: column;
+		color: #f2e7da;
+		font-size: 2vw;
+		font-weight: 400;
+		font-family: KoPubWorldBatang;
+	}
+	.footerWarnT {
+		display: flex;
+		flex-direction: column;
+		color: #f2e7da;
+		font-size: 1.5vw;
+		font-weight: 400;
+		width: 20vw;
+		font-family: KoPubWorldBatang;
+	}
+	.warnBox {
+		display: flex;
+		flex-direction: column-reverse;
+		align-content: space-between;
+		align-items: center;
+	}
+	.warnBox div {
+		width: fit-content;
+		margin-top: 1vh;
+	}
+	.koreanFooter {
+		font-family: KoPubWorldBatang;
+	}
+}
